@@ -1,0 +1,2 @@
+json.extract! rating, :id, :student_id, :teacher_id, :attendance, :studies, :discussion, :group_work, :independent_work, :distractability, :disruptability, :created_at, :updated_at
+json.url rating_url(rating, format: :json)

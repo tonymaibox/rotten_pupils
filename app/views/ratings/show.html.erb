@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @rating.student %>
+</p>
+
+<p>
+  <strong>Teacher:</strong>
+  <%= @rating.teacher %>
+</p>
+
+<p>
+  <strong>Attendance:</strong>
+  <%= @rating.attendance %>
+</p>
+
+<p>
+  <strong>Studies:</strong>
+  <%= @rating.studies %>
+</p>
+
+<p>
+  <strong>Discussion:</strong>
+  <%= @rating.discussion %>
+</p>
+
+<p>
+  <strong>Group work:</strong>
+  <%= @rating.group_work %>
+</p>
+
+<p>
+  <strong>Independent work:</strong>
+  <%= @rating.independent_work %>
+</p>
+
+<p>
+  <strong>Distractability:</strong>
+  <%= @rating.distractability %>
+</p>
+
+<p>
+  <strong>Disruptability:</strong>
+  <%= @rating.disruptability %>
+</p>
+
+<%= link_to 'Edit', edit_rating_path(@rating) %> |
+<%= link_to 'Back', ratings_path %>
