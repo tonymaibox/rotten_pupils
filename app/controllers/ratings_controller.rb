@@ -15,6 +15,8 @@ class RatingsController < ApplicationController
   # GET /ratings/new
   def new
     @rating = Rating.new
+    @student = Student.new
+    @rating.student = @student
   end
 
   # GET /ratings/1/edit

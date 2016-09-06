@@ -2,8 +2,12 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @student.name %>
+  <%= @student.name.titleize %>
 </p>
+<ul>
+<% @student.ratings.each do |rating| %>
+<ul><%= link_to rating, rating_path(rating) %></ul>
+<% end %>
 
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>
